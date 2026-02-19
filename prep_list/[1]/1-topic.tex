@@ -1,0 +1,241 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\hypersetup{colorlinks=true, linkcolor=blue, urlcolor=blue}
+\setlist[enumerate]{leftmargin=*, itemsep=0.35em}
+
+\begin{document}
+
+\begin{center}
+{\LARGE Arrays \& Strings Pattern Pack (200 problems)}\\[0.25em]
+{\small One-column list. Each item shows the LeetCode problem number for quick identification.}
+\end{center}
+
+\vspace{0.5em}
+\noindent\textbf{How to use:} solve in order; if a problem is too hard, skip it and return after 10--15 solved.
+\vspace{1em}
+
+\section*{Warm-up (mostly Easy)}
+\begin{enumerate}
+\item \textbf{[1]} Two Sum \hfill \textit{Easy} \\ {\small Hash Map}
+\item \textbf{[26]} Remove Duplicates from Sorted Array \hfill \textit{Easy} \\ {\small Two Pointers}
+\item \textbf{[27]} Remove Element \hfill \textit{Easy} \\ {\small Two Pointers}
+\item \textbf{[88]} Merge Sorted Array \hfill \textit{Easy} \\ {\small Two Pointers}
+\item \textbf{[121]} Best Time to Buy and Sell Stock \hfill \textit{Easy} \\ {\small Greedy / One Pass}
+\item \textbf{[125]} Valid Palindrome \hfill \textit{Easy} \\ {\small Two Pointers}
+\item \textbf{[167]} Two Sum II - Input Array Is Sorted \hfill \textit{Easy} \\ {\small Two Pointers}
+\item \textbf{[169]} Majority Element \hfill \textit{Easy} \\ {\small Counting}
+\item \textbf{[242]} Valid Anagram \hfill \textit{Easy} \\ {\small Counting}
+\item \textbf{[268]} Missing Number \hfill \textit{Easy} \\ {\small Prefix XOR / Math}
+\item \textbf{[283]} Move Zeroes \hfill \textit{Easy} \\ {\small Two Pointers}
+\item \textbf{[303]} Range Sum Query - Immutable \hfill \textit{Easy} \\ {\small Prefix Sums}
+\item \textbf{[349]} Intersection of Two Arrays \hfill \textit{Easy} \\ {\small Two Pointers / Hash Set}
+\item \textbf{[350]} Intersection of Two Arrays II \hfill \textit{Easy} \\ {\small Two Pointers / Counting}
+\item \textbf{[724]} Find Pivot Index \hfill \textit{Easy} \\ {\small Prefix Sums}
+\end{enumerate}
+
+\section*{Two Pointers \& In-place Array/String}
+\begin{enumerate}
+\item \textbf{[11]} Container With Most Water \hfill \textit{Medium} \\ {\small Two Pointers}
+\item \textbf{[15]} 3Sum \hfill \textit{Medium} \\ {\small Two Pointers / Sorting}
+\item \textbf{[16]} 3Sum Closest \hfill \textit{Medium} \\ {\small Two Pointers / Sorting}
+\item \textbf{[18]} 4Sum \hfill \textit{Medium} \\ {\small Two Pointers / Sorting}
+\item \textbf{[31]} Next Permutation \hfill \textit{Medium} \\ {\small In-place Array Manipulation}
+\item \textbf{[75]} Sort Colors \hfill \textit{Medium} \\ {\small Dutch National Flag / Two Pointers}
+\item \textbf{[80]} Remove Duplicates from Sorted Array II \hfill \textit{Medium} \\ {\small Two Pointers}
+\item \textbf{[151]} Reverse Words in a String \hfill \textit{Medium} \\ {\small Two Pointers / String}
+\item \textbf{[165]} Compare Version Numbers \hfill \textit{Medium} \\ {\small Two Pointers / Parsing}
+\item \textbf{[189]} Rotate Array \hfill \textit{Medium} \\ {\small Array Reversal / Two Pointers}
+\item \textbf{[287]} Find the Duplicate Number \hfill \textit{Medium} \\ {\small Two Pointers (Floyd Cycle)}
+\item \textbf{[345]} Reverse Vowels of a String \hfill \textit{Easy} \\ {\small Two Pointers}
+\item \textbf{[392]} Is Subsequence \hfill \textit{Easy} \\ {\small Two Pointers}
+\item \textbf{[443]} String Compression \hfill \textit{Medium} \\ {\small Two Pointers}
+\item \textbf{[524]} Longest Word in Dictionary through Deleting \hfill \textit{Medium} \\ {\small Two Pointers}
+\item \textbf{[532]} K-diff Pairs in an Array \hfill \textit{Medium} \\ {\small Two Pointers / Hash Map}
+\item \textbf{[541]} Reverse String II \hfill \textit{Easy} \\ {\small Two Pointers}
+\item \textbf{[557]} Reverse Words in a String III \hfill \textit{Easy} \\ {\small Two Pointers}
+\item \textbf{[581]} Shortest Unsorted Continuous Subarray \hfill \textit{Medium} \\ {\small Two Pointers / Scanning}
+\item \textbf{[611]} Valid Triangle Number \hfill \textit{Medium} \\ {\small Two Pointers / Sorting}
+\item \textbf{[633]} Sum of Square Numbers \hfill \textit{Medium} \\ {\small Two Pointers}
+\item \textbf{[658]} Find K Closest Elements \hfill \textit{Medium} \\ {\small Two Pointers}
+\item \textbf{[680]} Valid Palindrome II \hfill \textit{Easy} \\ {\small Two Pointers}
+\item \textbf{[809]} Expressive Words \hfill \textit{Medium} \\ {\small Two Pointers}
+\item \textbf{[844]} Backspace String Compare \hfill \textit{Easy} \\ {\small Two Pointers / Stack Sim}
+\item \textbf{[870]} Advantage Shuffle \hfill \textit{Medium} \\ {\small Two Pointers / Greedy}
+\item \textbf{[881]} Boats to Save People \hfill \textit{Medium} \\ {\small Two Pointers / Greedy}
+\item \textbf{[905]} Sort Array By Parity \hfill \textit{Easy} \\ {\small Two Pointers}
+\item \textbf{[917]} Reverse Only Letters \hfill \textit{Easy} \\ {\small Two Pointers}
+\item \textbf{[948]} Bag of Tokens \hfill \textit{Medium} \\ {\small Two Pointers / Greedy}
+\item \textbf{[977]} Squares of a Sorted Array \hfill \textit{Easy} \\ {\small Two Pointers}
+\item \textbf{[986]} Interval List Intersections \hfill \textit{Medium} \\ {\small Two Pointers / Intervals}
+\item \textbf{[989]} Add to Array-Form of Integer \hfill \textit{Easy} \\ {\small Two Pointers / Simulation}
+\item \textbf{[1007]} Minimum Domino Rotations For Equal Row \hfill \textit{Medium} \\ {\small Counting / Two Pointers}
+\item \textbf{[1498]} Number of Subsequences That Satisfy the Given Sum Condition \hfill \textit{Medium} \\ {\small Two Pointers / Sorting}
+\item \textbf{[1574]} Shortest Subarray to be Removed to Make Array Sorted \hfill \textit{Medium} \\ {\small Two Pointers}
+\item \textbf{[1679]} Max Number of K-Sum Pairs \hfill \textit{Medium} \\ {\small Two Pointers / Hash Map}
+\item \textbf{[1750]} Minimum Length of String After Deleting Similar Ends \hfill \textit{Medium} \\ {\small Two Pointers}
+\item \textbf{[2091]} Removing Minimum and Maximum From Array \hfill \textit{Medium} \\ {\small Two Pointers / Simulation}
+\item \textbf{[2410]} Maximum Matching of Players With Trainers \hfill \textit{Medium} \\ {\small Two Pointers / Sorting}
+\end{enumerate}
+
+\section*{Sliding Window}
+\begin{enumerate}
+\item \textbf{[3]} Longest Substring Without Repeating Characters \hfill \textit{Medium} \\ {\small Sliding Window}
+\item \textbf{[187]} Repeated DNA Sequences \hfill \textit{Medium} \\ {\small Sliding Window / Rolling Hash}
+\item \textbf{[209]} Minimum Size Subarray Sum \hfill \textit{Medium} \\ {\small Sliding Window}
+\item \textbf{[219]} Contains Duplicate II \hfill \textit{Easy} \\ {\small Sliding Window / Hash Map}
+\item \textbf{[424]} Longest Repeating Character Replacement \hfill \textit{Medium} \\ {\small Sliding Window}
+\item \textbf{[438]} Find All Anagrams in a String \hfill \textit{Medium} \\ {\small Sliding Window / Counting}
+\item \textbf{[567]} Permutation in String \hfill \textit{Medium} \\ {\small Sliding Window / Counting}
+\item \textbf{[643]} Maximum Average Subarray I \hfill \textit{Easy} \\ {\small Fixed-Size Sliding Window}
+\item \textbf{[674]} Longest Continuous Increasing Subsequence \hfill \textit{Easy} \\ {\small Two Pointers / Window}
+\item \textbf{[713]} Subarray Product Less Than K \hfill \textit{Medium} \\ {\small Sliding Window}
+\item \textbf{[795]} Number of Subarrays with Bounded Maximum \hfill \textit{Medium} \\ {\small Sliding Window}
+\item \textbf{[904]} Fruit Into Baskets \hfill \textit{Medium} \\ {\small Sliding Window}
+\item \textbf{[978]} Longest Turbulent Subarray \hfill \textit{Medium} \\ {\small Sliding Window / Two Pointers}
+\item \textbf{[1004]} Max Consecutive Ones III \hfill \textit{Medium} \\ {\small Sliding Window}
+\item \textbf{[1040]} Moving Stones Until Consecutive II \hfill \textit{Medium} \\ {\small Sliding Window / Two Pointers}
+\item \textbf{[1052]} Grumpy Bookstore Owner \hfill \textit{Medium} \\ {\small Fixed-Size Sliding Window}
+\item \textbf{[1151]} Minimum Swaps to Group All 1's Together \hfill \textit{Medium} \\ {\small Sliding Window}
+\item \textbf{[1156]} Swap For Longest Repeated Character Substring \hfill \textit{Medium} \\ {\small Sliding Window / Counting}
+\item \textbf{[1208]} Get Equal Substrings Within Budget \hfill \textit{Medium} \\ {\small Sliding Window}
+\item \textbf{[1234]} Replace the Substring for Balanced String \hfill \textit{Medium} \\ {\small Sliding Window / Counting}
+\item \textbf{[1297]} Maximum Number of Occurrences of a Substring \hfill \textit{Medium} \\ {\small Sliding Window / Counting}
+\item \textbf{[1343]} Number of Sub-arrays of Size K and Average >= Threshold \hfill \textit{Medium} \\ {\small Fixed-Size Sliding Window}
+\item \textbf{[1358]} Number of Substrings Containing All Three Characters \hfill \textit{Medium} \\ {\small Sliding Window}
+\item \textbf{[1423]} Maximum Points You Can Obtain from Cards \hfill \textit{Medium} \\ {\small Fixed Window Complement}
+\item \textbf{[1438]} Longest Continuous Subarray With Absolute Diff Less Than or Equal to Limit \hfill \textit{Medium} \\ {\small Sliding Window / Monotonic Deque}
+\item \textbf{[1456]} Maximum Number of Vowels in a Substring of Given Length \hfill \textit{Medium} \\ {\small Fixed-Size Sliding Window}
+\item \textbf{[1493]} Longest Subarray of 1's After Deleting One Element \hfill \textit{Medium} \\ {\small Sliding Window}
+\item \textbf{[1567]} Maximum Length of Subarray With Positive Product \hfill \textit{Medium} \\ {\small Two Pointers / Window}
+\item \textbf{[1604]} Alert Using Same Key-Card Three or More Times in a One Hour Period \hfill \textit{Medium} \\ {\small Sliding Window / Sorting}
+\item \textbf{[1658]} Minimum Operations to Reduce X to Zero \hfill \textit{Medium} \\ {\small Sliding Window / Prefix Sums}
+\item \textbf{[1695]} Maximum Erasure Value \hfill \textit{Medium} \\ {\small Sliding Window}
+\item \textbf{[1838]} Frequency of the Most Frequent Element \hfill \textit{Medium} \\ {\small Sliding Window / Sorting}
+\item \textbf{[1869]} Longer Contiguous Segments of Ones than Zeros \hfill \textit{Easy} \\ {\small Two Pointers / Window}
+\item \textbf{[1876]} Substrings of Size Three with Distinct Characters \hfill \textit{Easy} \\ {\small Fixed-Size Sliding Window}
+\item \textbf{[1888]} Minimum Number of Flips to Make the Binary String Alternating \hfill \textit{Medium} \\ {\small Sliding Window}
+\item \textbf{[1984]} Minimum Difference Between Highest and Lowest of K Scores \hfill \textit{Easy} \\ {\small Sliding Window / Sorting}
+\item \textbf{[2024]} Maximize the Confusion of an Exam \hfill \textit{Medium} \\ {\small Sliding Window}
+\item \textbf{[2090]} K Radius Subarray Averages \hfill \textit{Medium} \\ {\small Fixed Window / Prefix Sums}
+\item \textbf{[2134]} Minimum Swaps to Group All 1's Together II \hfill \textit{Medium} \\ {\small Circular Sliding Window}
+\item \textbf{[2302]} Count Subarrays With Score Less Than K \hfill \textit{Medium} \\ {\small Sliding Window}
+\item \textbf{[2401]} Longest Nice Subarray \hfill \textit{Medium} \\ {\small Sliding Window / Bitmask}
+\item \textbf{[2461]} Maximum Sum of Distinct Subarrays With Length K \hfill \textit{Medium} \\ {\small Sliding Window}
+\item \textbf{[2516]} Take K of Each Character From Left and Right \hfill \textit{Medium} \\ {\small Two Pointers / Sliding Window}
+\item \textbf{[2958]} Length of Longest Subarray With at Most K Frequency \hfill \textit{Medium} \\ {\small Sliding Window / Counting}
+\item \textbf{[2962]} Count Subarrays Where Max Element Appears at Least K Times \hfill \textit{Medium} \\ {\small Two Pointers / Sliding Window}
+\end{enumerate}
+
+\section*{Prefix Sums, Difference Arrays \& Prefix XOR}
+\begin{enumerate}
+\item \textbf{[53]} Maximum Subarray \hfill \textit{Easy} \\ {\small Prefix Sums / Kadane}
+\item \textbf{[152]} Maximum Product Subarray \hfill \textit{Medium} \\ {\small Prefix / Scan}
+\item \textbf{[238]} Product of Array Except Self \hfill \textit{Medium} \\ {\small Prefix/Suffix Products}
+\item \textbf{[304]} Range Sum Query 2D - Immutable \hfill \textit{Medium} \\ {\small 2D Prefix Sums}
+\item \textbf{[413]} Arithmetic Slices \hfill \textit{Medium} \\ {\small Prefix DP / Counting}
+\item \textbf{[523]} Continuous Subarray Sum \hfill \textit{Medium} \\ {\small Prefix Mod}
+\item \textbf{[525]} Contiguous Array \hfill \textit{Medium} \\ {\small Prefix Sums / Hash Map}
+\item \textbf{[560]} Subarray Sum Equals K \hfill \textit{Medium} \\ {\small Prefix Sums / Hash Map}
+\item \textbf{[918]} Maximum Sum Circular Subarray \hfill \textit{Medium} \\ {\small Prefix Sums / Kadane}
+\item \textbf{[930]} Binary Subarrays With Sum \hfill \textit{Medium} \\ {\small Prefix Sums / Hash Map}
+\item \textbf{[974]} Subarray Sums Divisible by K \hfill \textit{Medium} \\ {\small Prefix Mod / Counting}
+\item \textbf{[1014]} Best Sightseeing Pair \hfill \textit{Medium} \\ {\small Prefix Best}
+\item \textbf{[1031]} Maximum Sum of Two Non-Overlapping Subarrays \hfill \textit{Medium} \\ {\small Prefix Sums}
+\item \textbf{[1071]} Greatest Common Divisor of Strings \hfill \textit{Easy} \\ {\small String / Euclid}
+\item \textbf{[1094]} Car Pooling \hfill \textit{Medium} \\ {\small Difference Array / Prefix Sums}
+\item \textbf{[1109]} Corporate Flight Bookings \hfill \textit{Medium} \\ {\small Difference Array / Prefix Sums}
+\item \textbf{[1124]} Longest Well-Performing Interval \hfill \textit{Medium} \\ {\small Prefix Sums / Monotonic}
+\item \textbf{[1131]} Maximum of Absolute Value Expression \hfill \textit{Medium} \\ {\small Transform + Prefix Best}
+\item \textbf{[1177]} Can Make Palindrome from Substring \hfill \textit{Medium} \\ {\small Prefix Parity}
+\item \textbf{[1310]} XOR Queries of a Subarray \hfill \textit{Medium} \\ {\small Prefix XOR}
+\item \textbf{[1314]} Matrix Block Sum \hfill \textit{Medium} \\ {\small 2D Prefix Sums}
+\item \textbf{[1371]} Find the Longest Substring Containing Vowels in Even Counts \hfill \textit{Medium} \\ {\small Prefix Bitmask}
+\item \textbf{[1352]} Product of the Last K Numbers \hfill \textit{Medium} \\ {\small Prefix Products}
+\item \textbf{[1422]} Maximum Score After Splitting a String \hfill \textit{Easy} \\ {\small Prefix Sums}
+\item \textbf{[1442]} Count Triplets That Can Form Two Arrays of Equal XOR \hfill \textit{Medium} \\ {\small Prefix XOR}
+\item \textbf{[1477]} Find Two Non-overlapping Sub-arrays Each With Target Sum \hfill \textit{Medium} \\ {\small Prefix Sums}
+\item \textbf{[1508]} Range Sum of Sorted Subarray Sums \hfill \textit{Medium} \\ {\small Prefix Sums}
+\item \textbf{[1524]} Number of Sub-arrays With Odd Sum \hfill \textit{Medium} \\ {\small Prefix Parity / Counting}
+\item \textbf{[1525]} Number of Good Ways to Split a String \hfill \textit{Medium} \\ {\small Prefix/Suffix Counts}
+\item \textbf{[1573]} Number of Ways to Split a String \hfill \textit{Medium} \\ {\small Prefix Counts}
+\item \textbf{[1588]} Sum of All Odd Length Subarrays \hfill \textit{Easy} \\ {\small Prefix Sums}
+\item \textbf{[1590]} Make Sum Divisible by P \hfill \textit{Medium} \\ {\small Prefix Mod}
+\item \textbf{[1664]} Ways to Make a Fair Array \hfill \textit{Medium} \\ {\small Prefix Even/Odd Sums}
+\item \textbf{[1732]} Find the Highest Altitude \hfill \textit{Easy} \\ {\small Prefix Sums}
+\item \textbf{[1854]} Maximum Population Year \hfill \textit{Easy} \\ {\small Difference Array}
+\item \textbf{[1894]} Find the Student that Will Replace the Chalk \hfill \textit{Medium} \\ {\small Prefix Sums / Mod}
+\item \textbf{[1991]} Find the Middle Index in Array \hfill \textit{Easy} \\ {\small Prefix Sums}
+\item \textbf{[2017]} Grid Game \hfill \textit{Medium} \\ {\small Prefix Sums (2 rows)}
+\item \textbf{[2055]} Plates Between Candles \hfill \textit{Medium} \\ {\small Prefix Sums / Nearest}
+\item \textbf{[2155]} All Divisions With the Highest Score of a Binary Array \hfill \textit{Medium} \\ {\small Prefix Sums}
+\item \textbf{[2270]} Number of Ways to Split Array \hfill \textit{Medium} \\ {\small Prefix Sums}
+\item \textbf{[2381]} Shifting Letters II \hfill \textit{Medium} \\ {\small Difference Array}
+\item \textbf{[2433]} Find The Original Array of Prefix Xor \hfill \textit{Medium} \\ {\small Prefix XOR}
+\item \textbf{[2575]} Find the Divisibility Array of a String \hfill \textit{Medium} \\ {\small Prefix Mod}
+\item \textbf{[2587]} Rearrange Array to Maximize Prefix Score \hfill \textit{Medium} \\ {\small Prefix Sums / Sorting}
+\end{enumerate}
+
+\section*{Counting, Hashing, Sorting \& One-pass Scans}
+\begin{enumerate}
+\item \textbf{[36]} Valid Sudoku \hfill \textit{Medium} \\ {\small Counting / Hash Set}
+\item \textbf{[49]} Group Anagrams \hfill \textit{Medium} \\ {\small Counting / Hash Map}
+\item \textbf{[54]} Spiral Matrix \hfill \textit{Medium} \\ {\small Simulation}
+\item \textbf{[59]} Spiral Matrix II \hfill \textit{Medium} \\ {\small Simulation}
+\item \textbf{[73]} Set Matrix Zeroes \hfill \textit{Medium} \\ {\small In-place / Matrix}
+\item \textbf{[128]} Longest Consecutive Sequence \hfill \textit{Medium} \\ {\small Hash Set}
+\item \textbf{[134]} Gas Station \hfill \textit{Medium} \\ {\small Greedy / Prefix}
+\item \textbf{[229]} Majority Element II \hfill \textit{Medium} \\ {\small Counting}
+\item \textbf{[274]} H-Index \hfill \textit{Medium} \\ {\small Counting / Sorting}
+\item \textbf{[347]} Top K Frequent Elements \hfill \textit{Medium} \\ {\small Counting / Buckets}
+\item \textbf{[380]} Insert Delete GetRandom O(1) \hfill \textit{Medium} \\ {\small Hash Map}
+\item \textbf{[394]} Decode String \hfill \textit{Medium} \\ {\small Stack / String}
+\item \textbf{[451]} Sort Characters By Frequency \hfill \textit{Medium} \\ {\small Counting / Sorting}
+\item \textbf{[454]} 4Sum II \hfill \textit{Medium} \\ {\small Hash Map}
+\item \textbf{[462]} Minimum Moves to Equal Array Elements II \hfill \textit{Medium} \\ {\small Sorting / Median}
+\item \textbf{[498]} Diagonal Traverse \hfill \textit{Medium} \\ {\small Simulation}
+\item \textbf{[503]} Next Greater Element II \hfill \textit{Medium} \\ {\small Monotonic Stack}
+\item \textbf{[539]} Minimum Time Difference \hfill \textit{Medium} \\ {\small Sorting}
+\item \textbf{[540]} Single Element in a Sorted Array \hfill \textit{Medium} \\ {\small Binary Search}
+\item \textbf{[621]} Task Scheduler \hfill \textit{Medium} \\ {\small Counting / Greedy}
+\item \textbf{[659]} Split Array into Consecutive Subsequences \hfill \textit{Medium} \\ {\small Greedy / Counting}
+\item \textbf{[665]} Non-decreasing Array \hfill \textit{Medium} \\ {\small Greedy}
+\item \textbf{[670]} Maximum Swap \hfill \textit{Medium} \\ {\small Greedy / Digits}
+\item \textbf{[692]} Top K Frequent Words \hfill \textit{Medium} \\ {\small Counting / Heap}
+\item \textbf{[739]} Daily Temperatures \hfill \textit{Medium} \\ {\small Monotonic Stack}
+\item \textbf{[763]} Partition Labels \hfill \textit{Medium} \\ {\small Greedy / Counting}
+\item \textbf{[767]} Reorganize String \hfill \textit{Medium} \\ {\small Counting / Greedy}
+\item \textbf{[769]} Max Chunks To Make Sorted \hfill \textit{Medium} \\ {\small Prefix Max}
+\item \textbf{[781]} Rabbits in Forest \hfill \textit{Medium} \\ {\small Counting}
+\item \textbf{[791]} Custom Sort String \hfill \textit{Medium} \\ {\small Counting / Ordering}
+\item \textbf{[792]} Number of Matching Subsequences \hfill \textit{Medium} \\ {\small Counting / Two Pointers}
+\item \textbf{[825]} Friends Of Appropriate Ages \hfill \textit{Medium} \\ {\small Counting}
+\item \textbf{[846]} Hand of Straights \hfill \textit{Medium} \\ {\small Counting / Sorting}
+\item \textbf{[849]} Maximize Distance to Closest Person \hfill \textit{Medium} \\ {\small Two Pointers}
+\item \textbf{[912]} Sort an Array \hfill \textit{Medium} \\ {\small Sorting}
+\item \textbf{[915]} Partition Array into Disjoint Intervals \hfill \textit{Medium} \\ {\small Prefix Max / Suffix Min}
+\item \textbf{[923]} 3Sum With Multiplicity \hfill \textit{Medium} \\ {\small Counting}
+\item \textbf{[1010]} Pairs of Songs With Total Durations Divisible by 60 \hfill \textit{Medium} \\ {\small Counting / Mod}
+\item \textbf{[1338]} Reduce Array Size to The Half \hfill \textit{Medium} \\ {\small Counting / Sorting}
+\item \textbf{[1347]} Minimum Number of Steps to Make Two Strings Anagram \hfill \textit{Medium} \\ {\small Counting}
+\item \textbf{[1400]} Construct K Palindrome Strings \hfill \textit{Medium} \\ {\small Counting}
+\item \textbf{[1497]} Check If Array Pairs Are Divisible by k \hfill \textit{Medium} \\ {\small Counting / Mod}
+\item \textbf{[1509]} Minimum Difference Between Largest and Smallest Value in Three Moves \hfill \textit{Medium} \\ {\small Sorting}
+\item \textbf{[1513]} Number of Substrings With Only 1s \hfill \textit{Medium} \\ {\small Counting}
+\item \textbf{[1541]} Minimum Insertions to Balance a Parentheses String \hfill \textit{Medium} \\ {\small Stack / Counting}
+\item \textbf{[1630]} Arithmetic Subarrays \hfill \textit{Medium} \\ {\small Sorting}
+\item \textbf{[1657]} Determine if Two Strings Are Close \hfill \textit{Medium} \\ {\small Counting}
+\item \textbf{[1743]} Restore the Array From Adjacent Pairs \hfill \textit{Medium} \\ {\small Hash Map}
+\item \textbf{[1775]} Equal Sum Arrays With Minimum Number of Operations \hfill \textit{Medium} \\ {\small Counting / Greedy}
+\item \textbf{[1807]} Evaluate the Bracket Pairs of a String \hfill \textit{Medium} \\ {\small Hash Map / Parsing}
+\item \textbf{[1813]} Sentence Similarity III \hfill \textit{Medium} \\ {\small Two Pointers / String}
+\item \textbf{[1910]} Remove All Occurrences of a Substring \hfill \textit{Medium} \\ {\small String / Stack}
+\item \textbf{[1930]} Unique Length-3 Palindromic Subsequences \hfill \textit{Medium} \\ {\small Counting / Prefix}
+\item \textbf{[1963]} Minimum Number of Swaps to Make the String Balanced \hfill \textit{Medium} \\ {\small Stack / Counting}
+\item \textbf{[2007]} Find Original Array From Doubled Array \hfill \textit{Medium} \\ {\small Counting / Sorting}
+\end{enumerate}
+
+\end{document}
