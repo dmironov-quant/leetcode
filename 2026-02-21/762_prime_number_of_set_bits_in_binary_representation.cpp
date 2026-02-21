@@ -1,16 +1,15 @@
 // https://leetcode.com/problems/prime-number-of-set-bits-in-binary-representation/?envType=daily-question&envId=2026-02-21
 
 
-// Not optimal
 class Solution {
 public:
     int countPrimeSetBits(int left, int right) {
-        vector<bool> is_prime(right + 1, true);
+        vector<bool> is_prime(33, true);
         is_prime[0] = false;
         is_prime[1] = false;
-        for (int i = 2; i < right + 1; ++i) {
+        for (int i = 2; i < (int)is_prime.size(); ++i) {
             if (is_prime[i]) {
-                for (long long j = (long long)i * i; j <= (long long)right; j += i) {
+                for (int j = i * i; j < (int)is_prime.size(); j += i) {
                     is_prime[j] = false;
                 }
             }
