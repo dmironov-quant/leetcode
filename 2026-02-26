@@ -1,0 +1,29 @@
+// https://leetcode.com/problems/number-of-steps-to-reduce-a-number-in-binary-representation-to-one/description/?envType=daily-question&envId=2026-02-26
+
+class Solution:
+    def numSteps(self, s: str) -> int:
+        num_steps = 0
+        while s != '1':
+            num_steps += 1
+            if s[-1] == '0': 
+                s = s[:-1]
+            else:
+                t = ""
+                carry = '1'
+                for i in range(len(s) - 1, -1, -1):
+                    if s[i] == '1' and carry == '1':
+                        t += '0'
+                        carry = '1'
+                    elif s[i] == '1' and carry == '0':
+                        t += '1'
+                        carry = '0'
+                    elif s[i] == '0' and carry == '1':
+                        t += '1'
+                        carry = '0'
+                    else: # s[i] == '0 and carry = '0
+                        t += '0'
+                        carry = '0'
+                if carry == '1':
+                    t += '1'
+                s = t[::-1]
+        return num_steps
