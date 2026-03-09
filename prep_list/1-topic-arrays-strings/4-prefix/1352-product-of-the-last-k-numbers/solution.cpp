@@ -1,3 +1,5 @@
+// https://leetcode.com/problems/product-of-the-last-k-numbers/description/
+
 class ProductOfNumbers {
 public:
     ProductOfNumbers() {}
